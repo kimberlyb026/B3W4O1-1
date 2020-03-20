@@ -42,7 +42,7 @@ foreach ($result as $character) {
 	echo "<p> health:".$character['health']."</p>";
 	echo "<p> defense:".$character['defense']."</p>";
 	echo "<p> attack:".$character['attack']. "</P>";
-
+echo "</a>";
 	echo"</div>";
 }
 

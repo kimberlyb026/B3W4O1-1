@@ -17,6 +17,7 @@ foreach ($result as $character) {
 	echo "<p> defense:".$character['defense']."</p>";
 	echo "<p> attack:".$character['attack']. "</P>";
 	echo "<p> weapon:".$character['weapon']. "</P>";
+	echo "<p> armor:".$character['armor']. "</P>";
 	echo "<p>".$character['bio']. "</P>";
 
 	echo"</div>";
