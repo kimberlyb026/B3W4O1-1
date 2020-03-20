@@ -3,7 +3,24 @@ $servername = "localhost";
     $username = "heroes1";
     $password = "dordrecht";
     $dbname = "heroes";
+
+    try{
 $conn = new PDO('mysql:host=localhost;dbname=heroes', $username, $password);
+
+echo "connected succesfully";
+
+}
+
+catch(PDOexception $e){
+	echo " connection failed". $e->getMessage();
+}
+
+$stnt=$conn->prepare("SELECT id, name,avatar,health,attack,defense From characters Order By name");
+$stnt ->execute();
+$result=$stnt->fetchAll();
+
+
+
 
 
 ?>
@@ -12,22 +29,24 @@ $conn = new PDO('mysql:host=localhost;dbname=heroes', $username, $password);
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="./main.css">
 <title></title>
 </head>
 <h1>alle 10  characters uit de database</h1>
+<?php
+foreach ($result as $character) {
+	echo"<div>";
+	echo '<a href="character.php/?name=' . urlencode($character['name']) . '">';
+	echo "<img src='./img/" .$character['avatar'] . "'>";
+    echo "<p>".$character['name']. "</p>";
+	echo "<p> health:".$character['health']."</p>";
+	echo "<p> defense:".$character['defense']."</p>";
+	echo "<p> attack:".$character['attack']. "</P>";
 
-<img src="img/bowser.jpg">
-<img src="img/buffy.jpg">
-<img src="img/buzz.jpg">
-<img src="img/captianamerica.jpg">
-<img src="img/catwoman.jpg">
-<img src="img/conan.jpg">
-<img src="img/mario.jpg">
-<img src="img/quinn.jpg">
-<img src="img/shrek.jpg">
-<img src="img/zelda.jpg">
+	echo"</div>";
+}
 
+?>
 <div class="footer">
 <h3 id="footertext"> @ kimberly van berkum 2020</h3>
 </body>
