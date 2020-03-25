@@ -56,7 +56,7 @@ echo "</a>";
 
 ?>
 <div class="footer">
-<?php include "./footer.php";?>
+<h3 id="footertext"> @ kimberly van berkum 2020</h3>
 </body>
 </html>
 

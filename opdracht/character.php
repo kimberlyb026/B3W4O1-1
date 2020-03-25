@@ -33,11 +33,11 @@ echo "</div>";
 
 echo "<div style= 'background-color:".$character['color']. "'>";
 
-	echo "<p class='health1'> health :".$character['health']."</p>";
-	echo "<p class='defense1'> defense :".$character['defense']."</p>";
-	echo "<p class='attack1'> attack :".$character['attack']. "</P>";
-	echo "<p id='weapon1'> weapon :".$character['weapon']. "</P>";
-	echo "<p id='armor1'> armor: ".$character['armor']. "</P>";
+	echo "<p id='health'> health :".$character['health']."</p>";
+	echo "<p id='defense'> defense :".$character['defense']."</p>";
+	echo "<p id='attack'> attack :".$character['attack']. "</P>";
+	echo "<p id='weapon'> weapon :".$character['weapon']. "</P>";
+	echo "<p id='armor'> armor: ".$character['armor']. "</P>";
 
 echo "</div>";
 
@@ -51,7 +51,7 @@ echo "</div>";
 
 
 <div class="footer1">
-<?php include "./footer.php";?>
+<h3 id="footertext"> @ kimberly van berkum 2020</h3> 
 
 <!DOCTYPE html>
 <html>
@@ -59,7 +59,7 @@ echo "</div>";
 <link rel="stylesheet" type="text/css" href="../main.css">
 <link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 <title></title>
 </head>
 </body>

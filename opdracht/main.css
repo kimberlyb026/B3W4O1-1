@@ -51,7 +51,7 @@ margin-left:40px;
 }
 
 .bio{
-font-family: 'Indie Flower', cursive;
+font-family: 'Shadows Into Light', cursive;
 	display: inline-block;
 /*margin-bottom:450px;
 margin-left: 390px;*/
@@ -66,21 +66,11 @@ font-family: 'Cinzel', serif;
 color:indigo;
 }
 
-.defense1{
-	font-family: 'Cinzel', serif;
-color:#000066;
-}
-
 #health{
 	font-family: 'Cinzel', serif;
 	color:red;
 }
 
-
-.health1{
-	font-family: 'Cinzel', serif;
-	color:#660066;
-}
 
 
 #attack{
@@ -88,19 +78,14 @@ font-family: 'Cinzel', serif;
 color:goldenrod;
 }
 
-.attack1{
-font-family: 'Cinzel', serif;
-color:#800040;
-}
-
-#weapon1{
+#weapon{
 	font-family: 'Cinzel', serif;
-	color:#80002a;
+	color:firebrick;
 }
 
-#armor1{
+#armor{
 		font-family: 'Cinzel', serif;
-		color:#800080;
+		color:darkslategray;
 }
 
 .footer{
@@ -111,9 +96,8 @@ color:#800040;
 }
 
 .footer1{
-	display: block;
 	font-size: 20px;
-	margin-top: 20px;
+	margin-top: 100px;
 
 
 }
